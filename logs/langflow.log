@@ -1,0 +1,958 @@
+2023-06-01 16:27:34,517 - INFO - Logger set up with log level: 20(info)
+2023-06-01 16:27:34,521 - INFO - Log file: logs/langflow.log
+2023-06-01 16:27:55,351 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:27:58,200 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:27:59,699 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:08,758 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:17,830 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:17,836 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:22,517 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:22,521 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:25,802 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:25,803 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:28,024 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:28,025 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:29,964 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:29,965 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:34,207 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:28:34,208 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:29:11,987 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:29:11,988 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:29:13,105 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:29:13,105 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:29:22,161 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:29:22,161 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:29:26,059 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:29:26,060 - ERROR - Required input llm for module initialize_agent not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/validate.py", line 47, in post_validate_node
+    graph = build_graph(data)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/interface/run.py", line 50, in build_graph
+    return Graph(nodes, edges)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 43, in __init__
+    self._build_graph()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/graph.py", line 56, in _build_graph
+    node._build_params()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/graph/base.py", line 115, in _build_params
+    raise ValueError(
+ValueError: Required input llm for module initialize_agent not found
+2023-06-01 16:29:37,511 - ERROR - 1012
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 165, in handle_websocket
+    json_payload = await websocket.receive_json()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/starlette/websockets.py", line 133, in receive_json
+    self._raise_on_disconnect(message)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/starlette/websockets.py", line 105, in _raise_on_disconnect
+    raise WebSocketDisconnect(message["code"])
+starlette.websockets.WebSocketDisconnect: 1012
+2023-06-01 16:29:37,577 - ERROR - Cannot call "send" once a close message has been sent.
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 165, in handle_websocket
+    json_payload = await websocket.receive_json()
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/starlette/websockets.py", line 133, in receive_json
+    self._raise_on_disconnect(message)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/starlette/websockets.py", line 105, in _raise_on_disconnect
+    raise WebSocketDisconnect(message["code"])
+starlette.websockets.WebSocketDisconnect: 1012
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 181, in handle_websocket
+    await self.active_connections[client_id].close(
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/starlette/websockets.py", line 180, in close
+    await self.send(
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/starlette/websockets.py", line 85, in send
+    await self._send(message)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 65, in sender
+    await send(message)
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/uvicorn/protocols/websockets/websockets_impl.py", line 329, in asgi_send
+    raise RuntimeError(msg % message_type)
+RuntimeError: Unexpected ASGI message 'websocket.close', after sending 'websocket.close'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 189, in handle_websocket
+    await connection.close(code=1000, reason="Client disconnected")
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/starlette/websockets.py", line 180, in close
+    await self.send(
+  File "/Users/dhruv/anaconda3/envs/langflowEnv/lib/python3.10/site-packages/starlette/websockets.py", line 87, in send
+    raise RuntimeError('Cannot call "send" once a close message has been sent.')
+RuntimeError: Cannot call "send" once a close message has been sent.
+2023-06-01 16:40:43,880 - INFO - Logger set up with log level: 20(info)
+2023-06-01 16:40:43,884 - INFO - Log file: logs/langflow.log
+2023-06-01 16:41:07,471 - ERROR - expected string or bytes-like object
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 53, in post_validate_node
+    node.build()
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/graph/nodes.py", line 78, in build
+    variables = extract_input_variables_from_prompt(prompt_text)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/graph/utils.py", line 19, in extract_input_variables_from_prompt
+    return re.findall(r"{(.*?)}", prompt)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/re.py", line 240, in findall
+    return _compile(pattern, flags).findall(string)
+TypeError: expected string or bytes-like object
+2023-06-01 16:41:10,269 - ERROR - expected string or bytes-like object
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 53, in post_validate_node
+    node.build()
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/graph/nodes.py", line 78, in build
+    variables = extract_input_variables_from_prompt(prompt_text)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/graph/utils.py", line 19, in extract_input_variables_from_prompt
+    return re.findall(r"{(.*?)}", prompt)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/re.py", line 240, in findall
+    return _compile(pattern, flags).findall(string)
+TypeError: expected string or bytes-like object
+2023-06-01 16:41:11,409 - ERROR - expected string or bytes-like object
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 53, in post_validate_node
+    node.build()
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/graph/nodes.py", line 78, in build
+    variables = extract_input_variables_from_prompt(prompt_text)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/graph/utils.py", line 19, in extract_input_variables_from_prompt
+    return re.findall(r"{(.*?)}", prompt)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/re.py", line 240, in findall
+    return _compile(pattern, flags).findall(string)
+TypeError: expected string or bytes-like object
+2023-06-01 16:42:02,162 - ERROR - Error: 'PromptTemplate' object is not callable
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 180, in get_result_and_steps
+    output = await langchain_object.acall(chat_input, callbacks=async_callbacks)
+AttributeError: 'PromptTemplate' object has no attribute 'acall'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 185, in get_result_and_steps
+    output = langchain_object(chat_input, callbacks=sync_callbacks)
+TypeError: 'PromptTemplate' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 215, in process_graph
+    result, intermediate_steps = await get_result_and_steps(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 198, in get_result_and_steps
+    raise ValueError(f"Error: {str(exc)}") from exc
+ValueError: Error: 'PromptTemplate' object is not callable
+2023-06-01 16:42:02,231 - ERROR - Error: 'PromptTemplate' object is not callable
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 180, in get_result_and_steps
+    output = await langchain_object.acall(chat_input, callbacks=async_callbacks)
+AttributeError: 'PromptTemplate' object has no attribute 'acall'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 185, in get_result_and_steps
+    output = langchain_object(chat_input, callbacks=sync_callbacks)
+TypeError: 'PromptTemplate' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 120, in process_message
+    result, intermediate_steps = await process_graph(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 223, in process_graph
+    raise e
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 215, in process_graph
+    result, intermediate_steps = await get_result_and_steps(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 198, in get_result_and_steps
+    raise ValueError(f"Error: {str(exc)}") from exc
+ValueError: Error: 'PromptTemplate' object is not callable
+2023-06-01 16:42:02,354 - ERROR - Error: 'PromptTemplate' object is not callable
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 180, in get_result_and_steps
+    output = await langchain_object.acall(chat_input, callbacks=async_callbacks)
+AttributeError: 'PromptTemplate' object has no attribute 'acall'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 185, in get_result_and_steps
+    output = langchain_object(chat_input, callbacks=sync_callbacks)
+TypeError: 'PromptTemplate' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 175, in handle_websocket
+    await self.process_message(client_id, payload)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 130, in process_message
+    raise e
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 120, in process_message
+    result, intermediate_steps = await process_graph(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 223, in process_graph
+    raise e
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 215, in process_graph
+    result, intermediate_steps = await get_result_and_steps(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 198, in get_result_and_steps
+    raise ValueError(f"Error: {str(exc)}") from exc
+ValueError: Error: 'PromptTemplate' object is not callable
+2023-06-01 16:42:17,673 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:17,684 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:42:19,647 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:19,648 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:42:21,205 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:21,206 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:42:22,446 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:22,448 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:42:26,472 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:26,473 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:42:28,404 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:42:28,405 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:30,965 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:30,981 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:42:32,649 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:42:32,650 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:37,102 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:37,104 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:42:40,394 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:40,396 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:42:42,533 - ERROR - Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_507c17cc-c561-46c0-a4ce-96424121b9c6 not found
+2023-06-01 16:42:57,289 - ERROR - Error: Got unsupported message type: h
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 180, in get_result_and_steps
+    output = await langchain_object.acall(chat_input, callbacks=async_callbacks)
+AttributeError: 'ChatOpenAI' object has no attribute 'acall'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 121, in _handle_event
+    getattr(handler, event_name)(*args, **kwargs)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/base.py", line 141, in on_chat_model_start
+    raise NotImplementedError(
+NotImplementedError: StreamingLLMCallbackHandler does not implement `on_chat_model_start`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 185, in get_result_and_steps
+    output = langchain_object(chat_input, callbacks=sync_callbacks)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 178, in __call__
+    generation = self.generate(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 75, in generate
+    run_manager = callback_manager.on_chat_model_start(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 597, in on_chat_model_start
+    _handle_event(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in _handle_event
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in <listcomp>
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/schema.py", line 35, in get_buffer_string
+    raise ValueError(f"Got unsupported message type: {m}")
+ValueError: Got unsupported message type: h
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 215, in process_graph
+    result, intermediate_steps = await get_result_and_steps(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 198, in get_result_and_steps
+    raise ValueError(f"Error: {str(exc)}") from exc
+ValueError: Error: Got unsupported message type: h
+2023-06-01 16:42:57,654 - ERROR - Error: Got unsupported message type: h
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 180, in get_result_and_steps
+    output = await langchain_object.acall(chat_input, callbacks=async_callbacks)
+AttributeError: 'ChatOpenAI' object has no attribute 'acall'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 121, in _handle_event
+    getattr(handler, event_name)(*args, **kwargs)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/base.py", line 141, in on_chat_model_start
+    raise NotImplementedError(
+NotImplementedError: StreamingLLMCallbackHandler does not implement `on_chat_model_start`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 185, in get_result_and_steps
+    output = langchain_object(chat_input, callbacks=sync_callbacks)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 178, in __call__
+    generation = self.generate(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 75, in generate
+    run_manager = callback_manager.on_chat_model_start(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 597, in on_chat_model_start
+    _handle_event(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in _handle_event
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in <listcomp>
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/schema.py", line 35, in get_buffer_string
+    raise ValueError(f"Got unsupported message type: {m}")
+ValueError: Got unsupported message type: h
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 120, in process_message
+    result, intermediate_steps = await process_graph(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 223, in process_graph
+    raise e
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 215, in process_graph
+    result, intermediate_steps = await get_result_and_steps(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 198, in get_result_and_steps
+    raise ValueError(f"Error: {str(exc)}") from exc
+ValueError: Error: Got unsupported message type: h
+2023-06-01 16:42:57,957 - ERROR - Error: Got unsupported message type: h
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 180, in get_result_and_steps
+    output = await langchain_object.acall(chat_input, callbacks=async_callbacks)
+AttributeError: 'ChatOpenAI' object has no attribute 'acall'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 121, in _handle_event
+    getattr(handler, event_name)(*args, **kwargs)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/base.py", line 141, in on_chat_model_start
+    raise NotImplementedError(
+NotImplementedError: StreamingLLMCallbackHandler does not implement `on_chat_model_start`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 185, in get_result_and_steps
+    output = langchain_object(chat_input, callbacks=sync_callbacks)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 178, in __call__
+    generation = self.generate(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 75, in generate
+    run_manager = callback_manager.on_chat_model_start(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 597, in on_chat_model_start
+    _handle_event(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in _handle_event
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in <listcomp>
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/schema.py", line 35, in get_buffer_string
+    raise ValueError(f"Got unsupported message type: {m}")
+ValueError: Got unsupported message type: h
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 175, in handle_websocket
+    await self.process_message(client_id, payload)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 130, in process_message
+    raise e
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 120, in process_message
+    result, intermediate_steps = await process_graph(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 223, in process_graph
+    raise e
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 215, in process_graph
+    result, intermediate_steps = await get_result_and_steps(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 198, in get_result_and_steps
+    raise ValueError(f"Error: {str(exc)}") from exc
+ValueError: Error: Got unsupported message type: h
+2023-06-01 16:45:18,517 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:45:18,540 - ERROR - Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+2023-06-01 16:45:24,117 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:45:24,118 - ERROR - Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+2023-06-01 16:45:31,610 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:45:31,612 - ERROR - Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+2023-06-01 16:45:33,109 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:45:33,110 - ERROR - Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+2023-06-01 16:45:35,960 - ERROR - Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+2023-06-01 16:45:35,961 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:45:37,698 - ERROR - Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_6f673433-efe1-44f1-87b6-63a1046dca0f not found
+2023-06-01 16:45:37,699 - ERROR - Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+2023-06-01 16:45:44,671 - ERROR - Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_63abc1a3-fdf3-482c-823e-de0e1e40f8c1 not found
+2023-06-01 16:46:12,091 - ERROR - Error: Got unsupported message type: h
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 180, in get_result_and_steps
+    output = await langchain_object.acall(chat_input, callbacks=async_callbacks)
+AttributeError: 'ChatOpenAI' object has no attribute 'acall'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 121, in _handle_event
+    getattr(handler, event_name)(*args, **kwargs)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/base.py", line 141, in on_chat_model_start
+    raise NotImplementedError(
+NotImplementedError: StreamingLLMCallbackHandler does not implement `on_chat_model_start`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 185, in get_result_and_steps
+    output = langchain_object(chat_input, callbacks=sync_callbacks)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 178, in __call__
+    generation = self.generate(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 75, in generate
+    run_manager = callback_manager.on_chat_model_start(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 597, in on_chat_model_start
+    _handle_event(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in _handle_event
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in <listcomp>
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/schema.py", line 35, in get_buffer_string
+    raise ValueError(f"Got unsupported message type: {m}")
+ValueError: Got unsupported message type: h
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 215, in process_graph
+    result, intermediate_steps = await get_result_and_steps(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 198, in get_result_and_steps
+    raise ValueError(f"Error: {str(exc)}") from exc
+ValueError: Error: Got unsupported message type: h
+2023-06-01 16:46:12,284 - ERROR - Error: Got unsupported message type: h
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 180, in get_result_and_steps
+    output = await langchain_object.acall(chat_input, callbacks=async_callbacks)
+AttributeError: 'ChatOpenAI' object has no attribute 'acall'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 121, in _handle_event
+    getattr(handler, event_name)(*args, **kwargs)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/base.py", line 141, in on_chat_model_start
+    raise NotImplementedError(
+NotImplementedError: StreamingLLMCallbackHandler does not implement `on_chat_model_start`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 185, in get_result_and_steps
+    output = langchain_object(chat_input, callbacks=sync_callbacks)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 178, in __call__
+    generation = self.generate(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 75, in generate
+    run_manager = callback_manager.on_chat_model_start(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 597, in on_chat_model_start
+    _handle_event(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in _handle_event
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in <listcomp>
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/schema.py", line 35, in get_buffer_string
+    raise ValueError(f"Got unsupported message type: {m}")
+ValueError: Got unsupported message type: h
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 120, in process_message
+    result, intermediate_steps = await process_graph(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 223, in process_graph
+    raise e
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 215, in process_graph
+    result, intermediate_steps = await get_result_and_steps(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 198, in get_result_and_steps
+    raise ValueError(f"Error: {str(exc)}") from exc
+ValueError: Error: Got unsupported message type: h
+2023-06-01 16:46:12,530 - ERROR - Error: Got unsupported message type: h
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 180, in get_result_and_steps
+    output = await langchain_object.acall(chat_input, callbacks=async_callbacks)
+AttributeError: 'ChatOpenAI' object has no attribute 'acall'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 121, in _handle_event
+    getattr(handler, event_name)(*args, **kwargs)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/base.py", line 141, in on_chat_model_start
+    raise NotImplementedError(
+NotImplementedError: StreamingLLMCallbackHandler does not implement `on_chat_model_start`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 185, in get_result_and_steps
+    output = langchain_object(chat_input, callbacks=sync_callbacks)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 178, in __call__
+    generation = self.generate(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/chat_models/base.py", line 75, in generate
+    run_manager = callback_manager.on_chat_model_start(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 597, in on_chat_model_start
+    _handle_event(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in _handle_event
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/callbacks/manager.py", line 125, in <listcomp>
+    message_strings = [get_buffer_string(m) for m in args[1]]
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langchain/schema.py", line 35, in get_buffer_string
+    raise ValueError(f"Got unsupported message type: {m}")
+ValueError: Got unsupported message type: h
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 175, in handle_websocket
+    await self.process_message(client_id, payload)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 130, in process_message
+    raise e
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 120, in process_message
+    result, intermediate_steps = await process_graph(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 223, in process_graph
+    raise e
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 215, in process_graph
+    result, intermediate_steps = await get_result_and_steps(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/interface/run.py", line 198, in get_result_and_steps
+    raise ValueError(f"Error: {str(exc)}") from exc
+ValueError: Error: Got unsupported message type: h
+2023-06-01 16:46:41,142 - ERROR - 1006
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 165, in handle_websocket
+    json_payload = await websocket.receive_json()
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/starlette/websockets.py", line 133, in receive_json
+    self._raise_on_disconnect(message)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/starlette/websockets.py", line 105, in _raise_on_disconnect
+    raise WebSocketDisconnect(message["code"])
+starlette.websockets.WebSocketDisconnect: 1006
+2023-06-01 16:46:42,274 - ERROR - Cannot call "send" once a close message has been sent.
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 165, in handle_websocket
+    json_payload = await websocket.receive_json()
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/starlette/websockets.py", line 133, in receive_json
+    self._raise_on_disconnect(message)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/starlette/websockets.py", line 105, in _raise_on_disconnect
+    raise WebSocketDisconnect(message["code"])
+starlette.websockets.WebSocketDisconnect: 1006
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 181, in handle_websocket
+    await self.active_connections[client_id].close(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/starlette/websockets.py", line 180, in close
+    await self.send(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/starlette/websockets.py", line 85, in send
+    await self._send(message)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 65, in sender
+    await send(message)
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/uvicorn/protocols/websockets/websockets_impl.py", line 329, in asgi_send
+    raise RuntimeError(msg % message_type)
+RuntimeError: Unexpected ASGI message 'websocket.close', after sending 'websocket.close'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/langflow/api/chat_manager.py", line 189, in handle_websocket
+    await connection.close(code=1000, reason="Client disconnected")
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/starlette/websockets.py", line 180, in close
+    await self.send(
+  File "/Users/dhruv/anaconda3/envs/progressGPT/lib/python3.10/site-packages/starlette/websockets.py", line 87, in send
+    raise RuntimeError('Cannot call "send" once a close message has been sent.')
+RuntimeError: Cannot call "send" once a close message has been sent.
