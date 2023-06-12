@@ -1,0 +1,10 @@
+OUTPUT 1:
+
+Thought: Do I need to use a tool? Yes
+Action: Calculator
+Action Input: 2 + 6 + 8 + 4
+Observation: Answer: 20
+Thought: Do I need to use a tool? No
+AI: The answer is 20.
+
+MISTAKE: The point of the game of 24 is to reach the number 24. You called it quits when you reached 20. Don't stop until you reach 24.

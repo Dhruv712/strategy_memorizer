@@ -1,0 +1,92 @@
+# Sample Outputs
+
+## Outputs with Strategy Memory
+
+### Strategy Memory Output 1:
+
+I should look for an algorithm or strategy to solve this problem.
+Action: summarize_algorithm
+Action Input: The game of 24 seeks to reach the number 24 by using a combination of the four basic mathematical operations on the four numbers given.
+
+Observation:
+
+Step 1: Begin by arranging the numbers on the cards into an expression using the four basic mathematical operations (+, -, \*, /) and parentheses.
+
+Step 2: Evaluate the expression to see if it produces the value of 24.
+
+Step 3: If the expression does not produce the value of 24, adjust the expression and evaluate it again.
+
+Step 4: Keep repeating steps 2 and 3 until the expression produces the value of 24.
+Thought: I now have an algorithm to solve this problem.
+Action: Calculator
+Action Input: 3 \* (9 - 2) + 1
+Observation: Answer: 22
+Thought: I need to adjust the expression to get 24.
+Action: Calculator
+Action Input: 3 \* (9 - 2) / 1
+Observation: Answer: 21.0
+Thought: I need to adjust the expression again to get 24.
+Action: Calculator
+Action Input: 3 \* (9 - 2 + 1)
+Observation: Answer: 24
+Thought: I now know the final answer.
+Final Answer: 3 \* (9 - 2 + 1) = 24
+
+### Strategy Memory Output 2
+
+I need to find an algorithm or strategy to solve this problem.
+Action: summarize_algorithm
+Action Input: The game of 24 seeks to reach the number 24 by using a combination of the four basic mathematical operations on the four numbers given.
+
+Observation:
+
+The general algorithm for the game of 24 is as follows:
+
+1. Gather the four numbers given to form an integer array.
+
+2. Arrange the numbers in a mathematical expression using the operators ['+', '-', '*', '/'] and the parentheses '(' and ')'.
+
+3. Calculate the expression with a calculator tool to verify the answer.
+
+4. If the answer does not equal 24, keep trying different expressions until the number 24 is reached.
+   Thought: I now know the algorithm I need to use to solve this problem.
+   Action: Calculator
+   Action Input: 3 \* (9 - 2) + 1
+   Observation: Answer: 22
+   Thought: I need to try a different expression.
+   Action: Calculator
+   Action Input: (3 + 9) \* (2 - 1)
+   Observation: Answer: 12
+   Thought: I need to try a different expression.
+   Action: Calculator
+   Action Input: (3 + 9) \* (2 + 1)
+   Observation: Answer: 36
+   Thought: I need to try a different expression.
+   Action: Calculator
+   Action Input: (3 \* 9) + (2 - 1)
+   Observation: Answer: 28
+   Thought: I need to try a different expression.
+   Action: Calculator
+   Action Input: (3 \* 9) - (2 + 1)
+   Observation: Answer: 24
+   Thought: I now know the final answer.
+   Final Answer: (3 \* 9) - (2 + 1) = 24
+
+## Outputs without Strategy Memory (Control)
+
+### Control output 1:
+
+I need to use the four numbers and the four operations to get 24.
+Action: Calculator
+Action Input: 3 + 9 - 2 \* 1
+Observation: Answer: 10
+Thought: I need to use the 10 to get to 24.
+Action: Calculator
+Action Input: 10 + 1 \* 2 - 9
+Observation: Answer: 3
+Thought: I need to use the 3 to get to 24.
+Action: Calculator
+Action Input: 3 \* 8
+Observation: Answer: 24
+Thought: I now know the final answer.
+Final Answer: 3 \* 8 = 24

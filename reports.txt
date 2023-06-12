@@ -1,0 +1,5 @@
+ The four numbers must be used exactly once each, and all operations must be used.
+
+For example, if the four numbers are 2, 3, 4, and 6, then one possible solution is:
+
+((2 + 3) * 4) - 6 = 24

@@ -1,12 +1,125 @@
 Test Output 1:
-Please input a question: Solve the game of 24 using the numbers 4, 8, 2, and 0.
+Action:
+```
+{
+  "action": "Calculator",
+  "action_input": "8*8/4+4=24"
+}
+```
+Observation: Answer: 20.0
+Thought: That's not the right answer
+Action:
+```
+{
+  "action": "summarize_algorithm",
+  "action_input": "The game of 24 seeks to reach the number 24 by using a combination of the four basic mathematical operations on the four numbers given. Find an example solution to the game of 24 with the numbers 8, 8, 4, and 4."
+}
+```
+Observation: 
 
-Algorithm:
-• Choose two numbers from the set of four numbers (4, 8, 2, 0).
-• Use the four basic operations to calculate a new number from the two chosen numbers.
-• Generate a list with one less element than the previous, and call the function again.
-• If the result is 24, the game is solved.
+The solution to the game of 24 with the numbers 8, 8, 4, and 4 is: (8/4)*((8-4)+4).
 
-[SystemMessage(content='You are a helpful assistant that solves problems using strategies and algorithms provided to you.', additional_kwargs={}), SystemMessage(content='Using the following strategy or algorithm: \nAlgorithm:\n• Choose two numbers from the set of four numbers (4, 8, 2, 0).\n• Use the four basic operations to calculate a new number from the two chosen numbers.\n• Generate a list with one less element than the previous, and call the function again.\n• If the result is 24, the game is solved. \n... Solve this problem: Solve the game of 24 using the numbers 4, 8, 2, and 0.. Think step by step, and number your steps.', additional_kwargs={})] ##########
-content='1. Choose two numbers from the set of four numbers: 4 and 8.\n2. Use the four basic operations to calculate a new number from the two chosen numbers: 4 + 8 = 12.\n3. Generate a list with one less element than the previous, and call the function again with the new list [12, 2, 0].\n4. Choose two numbers from the new list: 12 and 2.\n5. Use the four basic operations to calculate a new number from the two chosen numbers: 12 - 2 = 10.\n6. Generate a list with one less element than the previous, and call the function again with the new list [10, 0].\n7. Choose two numbers from the new list: 10 and 0.\n8. Use the four basic operations to calculate a new number from the two chosen numbers: 10 * 0 = 0.\n9. Generate a list with one less element than the previous, and call the function again with the new list [0].\n10. The only number left in the list is 0, so we cannot choose two numbers to perform an operation on.\n11. Since we did not get a result of 24, we need to backtrack and try a different operation.\n12. Generate a new list with all four numbers [4, 8, 2, 0].\n13. Choose two numbers from the new list: 4 and 2.\n14. Use the four basic operations to calculate a new number from the two chosen numbers: 4 * 2 = 8.\n15. Generate a list with one less element than the previous, and call the function again with the new list [8, 8, 0].\n16. Choose two numbers from the new list: 8 and 8.\n17. Use the four basic operations to calculate a new number from the two chosen numbers: 8 - 8 = 0.\n18. Generate a list with one less element than the previous, and call the function again with the new list [0, 0].\n19. Choose two numbers from the new list: 0 and 0.\n20. Use the four basic operations to calculate a new number from the two chosen numbers: 0 + 0 = 0.\n21. Generate a list with one less element than the previous, and call the function again with the new list [0].\n22. The only number left in the list is 0, so we cannot choose two numbers to perform an operation on.\n23. Since we did not get a result of 24, we need to backtrack and try a different operation.\n24. Generate a new list with all four numbers [4, 8, 2, 0].\n25. Choose two numbers from the new list: 8 and 0.\n26. Use the four basic operations to calculate a new number from the two chosen numbers: 8 / 0 is undefined, so we cannot use these two numbers.\n27. Since we cannot use these two numbers, we need to backtrack and try a different combination of numbers.\n28. Generate a new list with all four numbers [4, 8, 2, 0].\n29. Choose two numbers from the new list: 2 and 0.\n30. Use the four basic operations to calculate a new number from the two chosen numbers: 2 / 0 is undefined, so we cannot use these two numbers.\n31. Since we cannot use these two numbers, we need to backtrack and try a different combination of numbers.\n32. Generate a new list with all four numbers [4, 8, 2, 0].\n33. Choose two numbers from the new list: 4 and 0.\n34. Use the four basic operations to calculate a new number from the two chosen numbers: 4 / 0 is undefined, so we cannot use these two numbers.\n35. Since we cannot use these two numbers, we have exhausted all possible combinations of numbers and operations.\n36. Therefore, it is impossible to get a result of 24 using the numbers 4, 8, 2, and 0.' additional_kwargs={} example=False
+To solve the game of 24, you can follow these general steps:
 
+1. Start by evaluating the numbers with the highest numerical values first, such as 8 in this case.
+2. Divide the highest value number by the next highest value number.
+3. Take the result of that calculation and use it as part of the equation.
+4. Add the remaining numbers together.
+5. Use parentheses to combine the two parts of the equation.
+6. Evaluate the equation to reach 24.
+Thought: That looks like the right answer
+Action:
+```
+{
+  "action": "Final Answer",
+  "action_input": "The solution to the game of 24 with the numbers 8, 8, 4, and 4 is: (8/4)*((8-4)+4)."
+}
+
+Feedback on Test Output 2:
+When you didn't get the right answer the first time, you correctly said "That's not the right answer." Then, you looked for an algorithm. Your big mistake was assuming that the steps in the algorithm would automatically yield the correct answer, without verifying it mathematically.
+
+
+Test Output 2:
+Action:
+```
+{
+  "action": "Calculator",
+  "action_input": "8*8/4+4"
+}
+```
+
+
+Observation: Answer: 20.0
+Thought: That's the right answer, but I need to make sure I'm not just guessing.
+Action:
+```
+{
+  "action": "summarize_algorithm",
+  "action_input": "The game of 24 seeks to reach the number 24 by using a combination of the four basic mathematical operations on the four numbers given. Find an example solution to the game of 24 with the numbers 8, 8, 4, and 4."
+}
+```
+
+Created a chunk of size 3996, which is longer than the specified 500
+Created a chunk of size 571, which is longer than the specified 500
+
+Observation: 
+
+As a general approach, when trying to solve the game of 24, start by looking for ways to divide the highest number by the second highest number. Then combine the two numbers that remain with the operators '+', '-', '*', and '/' to reach the target value of 24. Make sure to use real division when using the '/' operator and to avoid using '-' as a unary operator. Also, do not concatenate numbers together to form larger numbers.
+Thought: That's a good strategy, but I need to make sure I'm not just guessing.
+Action:
+```
+{
+  "action": "Calculator",
+  "action_input": "8/4*(8+4)"
+}
+```
+
+
+Observation: Answer: 24.0
+Thought: That's the right answer, so I can provide the final answer.
+Action:
+```
+{
+  "action": "Final Answer",
+  "action_input": "The solution to the game of 24 with the numbers 8, 8, 4, and 4 is 8/4*(8+4) = 24.0"
+}
+```
+Feedback on Test Output 2:
+This was perfectly done. You didn't make guesses and ended up with a valid answer!
+
+Test Output 3:
+I should look for an algorithm or strategy to solve this problem.
+Action: summarize_algorithm
+Action Input: The game of 24 seeks to reach the number 24 by using a combination of the four basic mathematical operations on the four numbers given.
+Mistake 1: Attempting to reach 24 without rearranging the expression.
+Solution: Use the four basic mathematical operations (+, -, *, /) and parentheses to arrange the four numbers in an expression.
+
+Mistake 2: Giving up when one attempt fails to reach 24.
+Solution: If one attempt fails to reach 24, keep trying and adjust the expression accordingly.
+
+Observation: 
+
+Step 1: Begin by arranging the numbers on the cards into an expression using the four basic mathematical operations (+, -, *, /) and parentheses.
+
+Step 2: Evaluate the expression to see if it produces the value of 24.
+
+Step 3: If the expression does not produce the value of 24, adjust the expression and evaluate it again.
+
+Step 4: Keep repeating steps 2 and 3 until the expression produces the value of 24.
+Thought: I now have an algorithm to solve this problem.
+Action: Calculator
+Action Input: 3 * (9 - 2) + 1
+Observation: Answer: 22
+Thought: I need to adjust the expression to get 24.
+Action: Calculator
+Action Input: 3 * (9 - 2) / 1
+Observation: Answer: 21.0
+Thought: I need to adjust the expression again to get 24.
+Action: Calculator
+Action Input: 3 * (9 - 2 + 1)
+Observation: Answer: 24
+Thought: I now know the final answer.
+Final Answer: 3 * (9 - 2 + 1) = 24
+
+Feedback on Test Output 3: 
+This was perfectly done. You kept trying until you got 24! Excellent work.

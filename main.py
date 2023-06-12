@@ -27,9 +27,11 @@ from langchain.schema import (
 from langchain.chains import RetrievalQA
 from langchain.llms import OpenAI
 from langchain.tools.base import StructuredTool
-from langchain.agents import initialize_agent, AgentType, load_tools
+from langchain.agents import initialize_agent, AgentType, load_tools, ZeroShotAgent, Tool, AgentExecutor
 
-from tooltest import summarize_algorithm
+from customTools import summarize_algorithm, write_report
+from langchain.experimental.plan_and_execute import PlanAndExecute, load_agent_executor, load_chat_planner
+from langchain.memory import ConversationBufferMemory
 ### END IMPORTS FOR LLM FUNCTIONALITY ###
 
 
@@ -44,86 +46,48 @@ def getSimilarDocs(database, prompt):
     docs = database.similarity_search_with_score(prompt)
     return docs
 
+def gameOf24():
+    summarization_tool = StructuredTool.from_function(summarize_algorithm)
+    serialization_tool = StructuredTool.from_function(write_report)
 
-### Loading in text file with stored learnings and splitting into docs for vector storage ###
-loader = TextLoader('algorithms.txt')
-documents = loader.load()
-text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-texts = text_splitter.split_documents(documents)
-
-
-### DOING SAME THING WITH CHROMA ### 
-# loader = TextLoader('algorithms.txt')
-# documents = loader.load()
-# text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-# docs = text_splitter.split_documents(documents)
-### END CHROMA ###
-
-### Creating embeddings and storing in vector storage ###
-embeddings = OpenAIEmbeddings()
-db = FAISS.from_documents(texts, embeddings)
-
-### EMBEDDINGS WITH CHROMA 
-# embeddings = OpenAIEmbeddings()
-# db = Chroma.from_documents(docs, embeddings)
-### END CHROMA ###
-
-### Retrieval with a prompt ### *** NOTE: SEEMS LIKE a lower similarity score means it's more similar.
-# query = "Please solve the game of 24 with the following numbers: 3, 6, 3, 3"
-# results = getSimilarDocs(db, query)
-# pg = results[0][0].page_content
-# mtdt = results[0][0].metadata
-# similarity_score = results[0][1]
-
-# print("page content: ", pg)
-# print("metadata: ", mtdt)
-# print("results[0][1]: ", similarity_score)
-
-# if (similarity_score < 0.4): # Should we use this algorithm
-#     print("We can use this background: ", pg)
-# else:
-#     print("It is unclear whether there is a strategy we should employ. The closest we could find is this: ", pg)
-
-
-# prompt = input("Please input a question: ")
+    chatllm = ChatOpenAI(model_name="gpt-4", temperature=0.2)
+    llm = OpenAI(temperature=0.1, model_name='text-davinci-002')
+    tools = load_tools(["llm-math"], llm)
+    tools.append(summarization_tool)
+    agent = initialize_agent(tools, llm, agent="zero-shot-react-description", verbose=True, return_intermediate_steps=True)    # output1 = agent_chain("We're going to play the game of 24. Look for an algorithm or strategy first.")
+    output1 = agent("The game of 24 seeks to combine four numbers with the four basic mathematical operations to reach 24. Solve the game of 24 with the numbers 6, 6, 4, and 8. Look up a relevant strategy first.")
+    print(output1["intermediate_steps"])
+    
+    
+    # output1 = agent_chain.run(input="Find a strategy with which to solve the game of 24 and list the mistakes to avoid.")
+    # output2 = agent_chain.run(input="Make a concrete and concise plan to avoid the above mistakes.")
+    # output3 = agent_chain.run(input="Using this plan and strategy, use the four basic operations to calculate a solution with the numbers, 2, 6, 8, and 4. Don't stop until you've reached 24.")
+    # "The game of 24 seeks to reach the number 24 by using a combination of the four basic mathematical operations on the numbers given. Calculate a solution to the game of 24 with the numbers 2, 4, 8, 1. Don't guess that something is the right answer. You don't know the final answer until you've verified it mathematically. Begin by looking for a good strategy."
+    # print(output["intermediate_steps"])
+    # import json
+    # historyAsString = json.dumps(output["intermediate_steps"], indent=2)
+    # output2 = llm("This is the output history from the problem you just solved: " + historyAsString + "... Based on the user's prompt and rules, did you solve the problem correctly? If so, describe your thinking. If not, explain what you did wrong.")
+    # print(output2)
 
 
 
-### Testing QA Chain ###
-# qa = RetrievalQA.from_chain_type(llm=OpenAI(), chain_type="stuff", retriever=db.as_retriever())
-# query = "Find an algorithm relevant to this question: " + prompt + "... Then summarize it in bullet points. If there is no information that will help you solve the question, respond \"None\"."
-# answer = qa.run(query)
-# print(answer)
 
-summarization_tool = StructuredTool.from_function(summarize_algorithm)
+def findRecipe():
+    summarization_tool = StructuredTool.from_function(summarize_algorithm)
+    llm = OpenAI(temperature=0.1)
+    tools = load_tools(["serpapi"], llm)
+    tools.append(summarization_tool)
+    agent_chain = initialize_agent(tools, llm, agent="zero-shot-react-description", verbose=True)
+    agent_chain.run("Find ")
 
-# answer = summarization_tool(prompt)
-chat = ChatOpenAI(model_name="gpt-4", temperature=0.2)
-llm = OpenAI(temperature=0.2)
-tools = load_tools(["llm-math"], llm)
-tools.append(summarization_tool)
+gameOf24()
 
-agent_chain = initialize_agent(tools, llm, agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION, verbose=True)
-
-# agent_chain()
-agent_chain.run("The game of 24 seeks to reach the number 24 by using a combination of the four basic mathematical operations on the four numbers given. Find a solution to the game of 24 using the numbers 8, 8, 4, and 4. Look for an algorithm or strategy first. Remember, the algorithm isn't the final solution. Solve the problem being posed. Think step by step.")
-
-
-# if ("None" in answer):
-#     print("Wah wah wahhhhh...")
-# else:
-#     ### Chat time ###
-#     human_template = "Using the following strategy or algorithm: {algorithm} \n... Solve this problem: {prompt}. Think step by step, and number your steps."
-#     system_template = "You are a helpful assistant that solves problems using strategies and algorithms provided to you."
-#     human_prompt = HumanMessagePromptTemplate.from_template(human_template)
-#     system_prompt = SystemMessagePromptTemplate.from_template(system_template)
-
-#     chat = ChatOpenAI(temperature=0)
-#     chat_prompt = ChatPromptTemplate.from_messages([system_prompt, human_prompt])
-#     formattedPrompt = chat_prompt.format_prompt(algorithm=answer, prompt=prompt).to_messages()
-#     print(formattedPrompt, "##########")
-#     chatResult = chat(formattedPrompt)
-#     print(chatResult)
+##### PLAN AND EXECUTE
+# model = ChatOpenAI(temperature=0)
+# planner = load_chat_planner(model)
+# executor = load_agent_executor(model, tools, verbose=True)
+# agent = PlanAndExecute(planner=planner, executor=executor, verbose=True)
+# agent.run("Solve the game of 24 with the numbers 8, 2, 4, and 4. Find one past algorithm or strategy first.")
 
 
 
