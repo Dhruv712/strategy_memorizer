@@ -42,14 +42,14 @@ def findAlgorithm(prompt):
     feedback = relevant_feedback.run(feedbackQuery)
     # print(feedback)
 
-    # qa = RetrievalQA.from_chain_type(llm=OpenAI(), chain_type="stuff", retriever=db.as_retriever())
-    # query = "From this document, find the algorithm relevant to this question: " + prompt + " \n Then summarize it as a series of steps."
-    # answer = qa.run(query)
-    query = prompt
-    # retriever = db.as_retriever()
-    results = db.similarity_search(query)
-    pg = results[0].page_content
-    return pg, feedback
+    qa = RetrievalQA.from_chain_type(llm=OpenAI(temperature=0), chain_type="stuff", retriever=db.as_retriever())
+    query = "From this document, find the information relevant to this question: " + prompt + " \n Then list it verbatim along with the title."
+    answer = qa.run(query)
+    # query = prompt
+    # # retriever = db.as_retriever()
+    # results = db.similarity_search(query)
+    # pg = results[0].page_content
+    return answer, feedback
 
 
 def summarize_algorithm(

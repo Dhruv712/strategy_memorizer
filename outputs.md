@@ -227,6 +227,39 @@ Observation: Strategy 1: Game of 24
    Thought: I now know the final answer
    Final Answer: 24
 
+### Output 2 (correct)
+
+I need to find a strategy for solving the game of 24.
+Action: summarize_algorithm
+Action Input: game of 24
+Observation: Strategy 1: Game of 24 - Start with multiplication. If the result is too high, try random combinations of addition, subtraction, and division.
+Thought: I will try the first strategy.
+Action: Calculator
+Action Input: 3*9*2*1
+Observation: Answer: 54
+Thought: That's too high. I'll try a different strategy.
+Action: Calculator
+Action Input: 3+9+2+1
+Observation: Answer: 15
+Thought: That's too low. I'll try a different strategy.
+Action: Calculator
+Action Input: 3*9+2+1
+Observation: Answer: 30
+Thought: That's too low. I'll try a different strategy.
+Action: Calculator
+Action Input: 3*9-2+1
+Observation: Answer: 26
+Thought: That's too high. I'll try a different strategy.
+Action: Calculator
+Action Input: 3*9/(2+1)
+Observation: Answer: 9.0
+Thought: That's too low. I'll try a different strategy.
+Action: Calculator
+Action Input: (3+9)*2/1
+Observation: Answer: 24.0
+Thought: I now know the final answer.
+Final Answer: (3+9)*2/1
+
 ## Outputs without Strategy Memory (Control)
 
 ### Control output 1 (incorrect)

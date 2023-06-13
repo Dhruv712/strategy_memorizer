@@ -53,11 +53,20 @@ def gameOf24():
     chatllm = ChatOpenAI(model_name="gpt-4", temperature=0.2)
     llm = OpenAI(temperature=0.1, model_name='text-davinci-002')
     tools = load_tools(["llm-math"], llm)
-    tools.append(summarization_tool)
+    # tools.append(summarization_tool)
     agent = initialize_agent(tools, llm, agent="zero-shot-react-description", verbose=True, return_intermediate_steps=True)    # output1 = agent_chain("We're going to play the game of 24. Look for an algorithm or strategy first.")
-    output1 = agent("The game of 24 seeks to combine four numbers with the four basic mathematical operations to reach 24. Solve the game of 24 with the numbers 6, 6, 4, and 8. Look up a relevant strategy first.")
+    prompt1 = "The game of 24 seeks to combine four numbers with the four basic mathematical operations to reach 24. Solve the game of 24 with the numbers 3, 9, 2, and 1."
+    output1 = agent(prompt1)
     print(output1["intermediate_steps"])
-    
+    import json
+    historyAsString = json.dumps(output1["intermediate_steps"], indent=2)
+
+
+
+    prompt2 = "Your goal was this: " + prompt1 + "\n" + "Here are the steps you took to solve a problem: " + historyAsString + "\n What was your final answer? What did you do right? What did you do wrong?"
+    print(prompt2)
+    output2 = chatllm([HumanMessage(content=prompt2)])
+    print(output2)
     
     # output1 = agent_chain.run(input="Find a strategy with which to solve the game of 24 and list the mistakes to avoid.")
     # output2 = agent_chain.run(input="Make a concrete and concise plan to avoid the above mistakes.")
@@ -76,11 +85,12 @@ def findRecipe():
     summarization_tool = StructuredTool.from_function(summarize_algorithm)
     llm = OpenAI(temperature=0.1)
     tools = load_tools(["serpapi"], llm)
-    tools.append(summarization_tool)
+    # tools.append(summarization_tool)
     agent_chain = initialize_agent(tools, llm, agent="zero-shot-react-description", verbose=True)
-    agent_chain.run("Find ")
+    agent_chain.run("Find a good Christmas recipe. Break it down step by step.")
 
 gameOf24()
+# findRecipe()
 
 ##### PLAN AND EXECUTE
 # model = ChatOpenAI(temperature=0)

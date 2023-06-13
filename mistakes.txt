@@ -8,3 +8,12 @@ Thought: Do I need to use a tool? No
 AI: The answer is 20.
 
 MISTAKE: The point of the game of 24 is to reach the number 24. You called it quits when you reached 20. Don't stop until you reach 24.
+
+OUTPUT 2:
+
+Thought: Do I need to use a tool? Yes
+Action: Calculator
+Action Input: 3, 9, 2, 1
+ERROR
+
+MISTAKE: The calculator tool does not recognize numbers joined by commas. You must use mathematical operations.

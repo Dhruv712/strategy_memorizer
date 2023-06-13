@@ -1,0 +1,55 @@
+Tips:
+Strategy 1: Game of 24
+1. Start with multiplication. If the result is too high, try random combinations of addition, subtraction, and division.
+
+Strategy 2: Recipes
+1. Start by searching for the aesthetic or theme of the holiday, and only then look for the recipes.
+
+
+Algorithm (structured):
+Algorithm 1: Game of 24
+1. Break down the numbers into two pairs like so: (a_b)_(c_d) where each underscore represents a math operation
+2. Use one of the four basic operations (*, /, +, or -) between each number and pair
+3. Evaluate the result. If it evaluates to 24, you are done. If not, repeat steps 1-2 with different orderings.
+
+
+Algorithm (structured):
+Algorithm: Game of 24
+Given n numbers (stored in array A), can you use arithmetic to arrive at x?
+
+If n = 1:
+If A[0] = x, then yes
+If A[0] != x, then no
+If n = 2:
+Try multiplying the two numbers
+Try adding the two numbers
+If x >= 0
+Try subtracting the smaller from the larger
+Else try subtracting the larger from the smaller
+Try dividing the larger by the smaller
+If any of those work, then yes. If not, then no solution.
+Try adding all the numbers in A together.
+Try multiplying all the numbers in A together.
+If there are factors of x in A, pick one.
+Prefer 1 as a factor of x, and then prefer smaller factors
+See if the other n - 1 numbers can make the other factor of x
+If so, then yes
+If not, then pick another factor
+If there are no more factors of x in A, then for each number a in A:
+SUBTRACT a from x
+Prefer even numbers
+See if the other n - 1 numbers can form the result
+If so, then yes
+If not, try the next number
+If that fails, then for each number a in A:
+ADD a to x
+Prefer even numbers
+See if the other n - 1 numbers can form the result
+If so, then yes
+If not, try the next number
+If that fails, then for each number a in A:
+MULTIPLY x by a
+Prefer smaller numbers
+See if the other n - 1 numbers can form the result
+If so, then yes
+If not, then no solution

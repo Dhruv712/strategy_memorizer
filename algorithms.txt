@@ -1,2 +1,5 @@
 Strategy 1: Game of 24
-1. Start with multiplication. If the result is too high, explore addition, subtraction, and division.
+1. Start with multiplication. If the result is too high, explore combinations of addition, subtraction, and division.
+
+Strategy 2: Recipes
+1. Start by searching for the aesthetic or theme of the holiday, and only then look for the recipes.
